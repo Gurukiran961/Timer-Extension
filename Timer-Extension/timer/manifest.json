@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Timer",
+    "version": "1.0",
+    "action": {
+      "default_popup": "popup.html",
+      "default_popup_width": 400,
+    "default_popup_height": 250
+    },
+    "permissions": ["storage", "tabs"]
+  }
+  
+  

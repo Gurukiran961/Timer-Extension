@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RPE Timer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .button-container {
+      display: flex;
+      gap: 20px; /* Adds space between buttons */
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+    #start {
+      background-color: green;
+    }
+    #end {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>RPE Timer</h1>
+  <div class="button-container">
+    <button id="start">Start Timer</button>
+    <button id="end">End Timer</button>
+  </div>
+  <p>Total Time: <span id="totalTime">0 minutes 0.00 seconds</span></p>
+
+  <script src="timer.js"></script>
+</body>
+</html>

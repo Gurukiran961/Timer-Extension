@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> RPE Timer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      width: 250px; /* Set width */
+      height: 100px; /* Set height */
+    }
+ 
+    .button-container {
+      display: flex;
+      gap: 30px; /* Adds space between buttons */
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+   
+    #start {
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    #end {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1> RPE Timer</h1>
+  <button id="start">Start Timer</button>
+  <button id="end">End Timer</button>
+  <p>Total Time: <span id="totalTime">0</span> </p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
