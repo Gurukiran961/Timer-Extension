@@ -1,36 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Timer</title>
+  <title>RPE Timer</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 20px;
     }
-    button {
-      margin: 5px;
+
+    .button-container {
+      display: flex;
+      gap: 30px;
     }
+    button {
+      padding: 10px 20px;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
     #start {
       background-color: green;
       color: white;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
     }
     #end {
       background-color: red;
       color: white;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
+    }
+
+    /* Popup styles */
+    .popup {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 300px;
+      padding: 20px;
+      background: white;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+    .popup-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   </style>
 </head>
 <body>
-  <h1>Timer</h1>
-  <button id="start">Start Timer</button>
-  <button id="end">End Timer</button>
-  <p>Total Time: <span id="totalTime">0</span> seconds</p>
+  <h1>RPE Timer</h1>
+  <div class="button-container">
+    <button id="start">Start Timer</button>
+    <button id="end">End Timer</button>
+  </div>
+  <p>Total Time: <span id="totalTime">0</span></p>
+
+  <!-- Popup container -->
+  <div class="popup" id="popup">
+    <div class="popup-header">
+      <h2>Timer Popup</h2>
+      <button id="closePopup">&times;</button>
+    </div>
+    <p>Total Time: <span id="popupTotalTime">0</span></p>
+  </div>
 
   <script src="popup.js"></script>
 </body>
